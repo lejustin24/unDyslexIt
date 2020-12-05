@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width">
+	<meta charset="UTF-8">
+	<title>unDyslexIT</title>
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="stylesheet" href="styles/arabic.css">
+	<link rel="stylesheet" href="styles/buttons.css">
+</head>
+<body>
+
+
+  <center>
+  <div class="modal-content">
+    <div class="imgcontainer">
+      <img src="img/logo.png" alt="Logo" class="logo" >
+    </div>
+    <div class="container">
+		<div class="row">
+			<div class="col-xs-8">
+				<pre id='exp'>(\u0644\u0652)|(\u0627\u0644)(?!\u0652)|([^\u064B\u064C\u064D\u064E\u064F\u0650(".,)!\- ]\u0651?([\u064B\u064C\u064D\u064E\u064F\u0650\u0627\u0649]|[\u0648\u064A](?![\u064B\u064C\u064D\u064E\u064F\u0650]))\u0627?([^\u064B\u064C\u064D\u064E\u064F\u0650(".,)!\- ]\u0651?\u0652)*)</pre>
+			</div>
+			<div class="col-xs-2">
+				<input id='flags' class='form-control' type="hidden" data-placement='bottom' value='g'>
+			</div>
+		</div>
+
+
+
+		<div class="group" style="text-align: center; font-size:30px;">
+			<label for='txt'>اكتب هنا</label>
+			<pre id='txt' style="text-align: right; direction:rtl; font-size:30px;" contenteditable='true' spellcheck='false'></pre>
+		</div>
+    </div>
+		<a class="Button" href="index.html">Homepage<span class="Button-mask Button-rotates  Graident-four"></span></a>
+  </div>
+  </center>
+
+
+  
+<script type="text/javascript" src="comp/jquery.min.js"></script>
+<script type="text/javascript" src="comp/xregexp-all.js"></script>
+<script type="text/javascript" src="lib/regex-colorizer/regex-colorizer.js"></script>
+<script src="lib/main.js"></script>
+
+<script type="text/javascript">
+	document.getElementById('exp').style.display = "none";
+</script>
+</body>
+</html>

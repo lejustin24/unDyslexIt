@@ -1,0 +1,24 @@
+
+
+Match a single character not present in the list below [^aeiouy]*
+* Quantifier — Matches between zero and unlimited times, as many times as possible, giving back as needed (greedy)
+aeiouy matches a single character in the list aeiouy (case insensitive)
+Match a single character present in the list below [aeiouy]+
++ Quantifier — Matches between one and unlimited times, as many times as possible, giving back as needed (greedy)
+aeiouy matches a single character in the list aeiouy (case insensitive)
+Non-capturing group (?:[^aeiouy]*$|[^aeiouy](?=[^aeiouy]))?
+? Quantifier — Matches between zero and one times, as many times as possible, giving back as needed (greedy)
+1st Alternative [^aeiouy]*$
+Match a single character not present in the list below [^aeiouy]*
+* Quantifier — Matches between zero and unlimited times, as many times as possible, giving back as needed (greedy)
+aeiouy matches a single character in the list aeiouy (case insensitive)
+$ asserts position at the end of the string
+2nd Alternative [^aeiouy](?=[^aeiouy])
+Match a single character not present in the list below [^aeiouy]
+aeiouy matches a single character in the list aeiouy (case insensitive)
+Positive Lookahead (?=[^aeiouy])
+Assert that the Regex below matches
+Match a single character not present in the list below [^aeiouy]
+Global pattern flags
+g modifier: global. All matches (don't return after first match)
+i modifier: insensitive. Case insensitive match (ignores case of [a-zA-Z])
